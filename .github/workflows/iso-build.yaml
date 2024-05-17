@@ -40,6 +40,7 @@ jobs:
           path: /tmp/archlive/out/*.iso
   access-check:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Access check
         run: |
